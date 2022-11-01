@@ -20,7 +20,7 @@ public class TestBase {
 
         Configuration.browserCapabilities = capabilities;
         Configuration.pageLoadTimeout = 1000000;
-        Configuration.baseUrl = "https://www.tutu.ru";
+//        Configuration.baseUrl = "https://www.tutu.ru";
         Configuration.browserSize = System.getProperty("browser_size");
         Configuration.browser = System.getProperty("browser_name");
         Configuration.browserVersion = System.getProperty("browser_version");
