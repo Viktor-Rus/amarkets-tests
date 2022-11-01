@@ -20,18 +20,18 @@ public class TestBase {
 
         Configuration.browserCapabilities = capabilities;
         Configuration.pageLoadTimeout = 1000000;
-//        Configuration.baseUrl = "https://www.tutu.ru";
-//        Configuration.browserSize = System.getProperty("browser_size");
-//        Configuration.browser = System.getProperty("browser_name");
-//        Configuration.browserVersion = System.getProperty("browser_version");
-//        Configuration.remote = System.getProperty("remote_selenide");
+        Configuration.baseUrl = "https://www.tutu.ru";
+        Configuration.browserSize = System.getProperty("browser_size");
+        Configuration.browser = System.getProperty("browser_name");
+        Configuration.browserVersion = System.getProperty("browser_version");
+        Configuration.remote = System.getProperty("remote_selenide");
     }
 
-//    @AfterEach
-//    void addAttachments() {
-//        Attach.screenshotAs("Last screenshot");
-//        Attach.pageSource();
-//        Attach.browserConsoleLogs();
-//        Attach.addVideo();
-//    }
+    @AfterEach
+    void addAttachments() {
+        Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
+    }
 }
