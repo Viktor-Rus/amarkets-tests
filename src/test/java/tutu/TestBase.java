@@ -25,8 +25,8 @@ public class TestBase {
         Configuration.browserVersion = System.getProperty("browser_version");
         Configuration.remote = System.getProperty("remote_selenide");
 
-        Configuration.proxyHost = "193.106.214.230";
-        Configuration.proxyPort = 3128;
+        Configuration.proxyHost = "82.114.97.157";
+        Configuration.proxyPort = 1256;
     }
 
     @AfterEach
