@@ -30,12 +30,15 @@ public class TestBase {
         capabilities.setCapability("enableVideo", true);
         capabilities.setCapability("enableVideo", true);
 
+        capabilities.setCapability("network.proxy.http", "172.217.169.174");
+        capabilities.setCapability("network.proxy.http_port", 443 );
+
         Configuration.browserCapabilities = capabilities;
 
-        Configuration.browserSize = System.getProperty("browser_size");
-        Configuration.browser = System.getProperty("browser_name");
-        Configuration.browserVersion = System.getProperty("browser_version");
-        Configuration.remote = System.getProperty("remote_selenide");
+//        Configuration.browserSize = System.getProperty("browser_size");
+//        Configuration.browser = System.getProperty("browser_name");
+//        Configuration.browserVersion = System.getProperty("browser_version");
+//        Configuration.remote = System.getProperty("remote_selenide");
 
         Configuration.baseUrl = "https://www.tutu.ru";
 
@@ -46,11 +49,6 @@ public class TestBase {
 //        System.setProperty("http.proxyHost", "172.217.169.174");
 //        System.setProperty("http.proxyPort", "443");
 
-        URL weburl = new URL("https://www.tutu.ru");
-        Proxy webProxy
-                = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("172.217.169.174", 443));
-        HttpURLConnection webProxyConnection
-                = (HttpURLConnection) weburl.openConnection(webProxy);
 
 //        WebDriverRunner.getAndCheckWebDriver(); // otherwise WebDriverRunner.getSelenideProxy() returns null
 //
