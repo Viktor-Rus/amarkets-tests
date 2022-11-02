@@ -13,7 +13,7 @@ public class MainPageTests extends TestBase {
     @BeforeEach
     public void visitMainPage() {
 //        open("/");
-        new MainPage().openMainPage();
+//        new MainPage().openMainPage();
     }
 
 
