@@ -28,17 +28,16 @@ public class TestBase {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
-        capabilities.setCapability("enableVideo", true);
 
         capabilities.setCapability("network.proxy.http", "172.217.169.174");
         capabilities.setCapability("network.proxy.http_port", 443 );
 
         Configuration.browserCapabilities = capabilities;
 
-//        Configuration.browserSize = System.getProperty("browser_size");
-//        Configuration.browser = System.getProperty("browser_name");
-//        Configuration.browserVersion = System.getProperty("browser_version");
-//        Configuration.remote = System.getProperty("remote_selenide");
+        Configuration.browserSize = System.getProperty("browser_size");
+        Configuration.browser = System.getProperty("browser_name");
+        Configuration.browserVersion = System.getProperty("browser_version");
+        Configuration.remote = System.getProperty("remote_selenide");
 
         Configuration.baseUrl = "https://www.tutu.ru";
 
