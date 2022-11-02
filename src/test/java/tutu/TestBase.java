@@ -32,18 +32,19 @@ public class TestBase {
         Configuration.remote = System.getProperty("remote_selenide");
 
 //        Configuration.proxyEnabled = true;
-        Configuration.proxyHost = "92.101.95.210";
-        Configuration.proxyPort = 1080;
-        Configuration.holdBrowserOpen = true;
+//        Configuration.proxyHost = "172.217.169.174";
+//        Configuration.proxyPort = 443;
         Configuration.proxyEnabled = true;
+        System.setProperty("http.proxyHost", "172.217.169.174");
+        System.setProperty("http.proxyPort", "443");
 
-        WebDriverRunner.getAndCheckWebDriver(); // otherwise WebDriverRunner.getSelenideProxy() returns null
-
-        BrowserUpProxy proxy = WebDriverRunner.getSelenideProxy().getProxy();
-        proxy.setHarCaptureTypes(CaptureType.getAllContentCaptureTypes());
-        proxy.enableHarCaptureTypes(CaptureType.REQUEST_CONTENT, CaptureType.RESPONSE_CONTENT);
-        proxy.newHar("pofig");
-        open("https://google.com");
+//        WebDriverRunner.getAndCheckWebDriver(); // otherwise WebDriverRunner.getSelenideProxy() returns null
+//
+//        BrowserUpProxy proxy = WebDriverRunner.getSelenideProxy().getProxy();
+//        proxy.setHarCaptureTypes(CaptureType.getAllContentCaptureTypes());
+//        proxy.enableHarCaptureTypes(CaptureType.REQUEST_CONTENT, CaptureType.RESPONSE_CONTENT);
+//        proxy.newHar("pofig");
+//        open("https://google.com");
     }
 
     @AfterEach
