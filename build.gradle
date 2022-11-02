@@ -30,7 +30,9 @@ dependencies {
             "io.qameta.allure:allure-selenide:$allureVersion",
             "org.junit.jupiter:junit-jupiter:5.9.0",
             "org.slf4j:slf4j-simple:$slf4jVersion",
-            "com.browserup:browserup-proxy-core:2.1.1"
+            "com.browserup:browserup-proxy-core:2.1.1",
+              "io.netty:netty-all:4.1.54.Final",
+            "io.netty:netty-codec:4.1.54.Final"
     )
 }
 
