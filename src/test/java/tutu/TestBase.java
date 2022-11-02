@@ -32,8 +32,8 @@ public class TestBase {
         Configuration.remote = System.getProperty("remote_selenide");
 
 //        Configuration.proxyEnabled = true;
-//        Configuration.proxyHost = "92.101.95.210";
-//        Configuration.proxyPort = 1080;
+        Configuration.proxyHost = "92.101.95.210";
+        Configuration.proxyPort = 1080;
         Configuration.holdBrowserOpen = true;
         Configuration.proxyEnabled = true;
 
