@@ -18,8 +18,6 @@ public class TestBase {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         capabilities.setCapability("enableVideo", true);
-        capabilities.setCapability("httpProxy", "82.114.97.157");
-        capabilities.setCapability("httpProxy", "82.114.97.157");
 
         Configuration.browserCapabilities = capabilities;
         Configuration.baseUrl = "https://www.tutu.ru";
@@ -27,7 +25,7 @@ public class TestBase {
         Configuration.browser = System.getProperty("browser_name");
         Configuration.browserVersion = System.getProperty("browser_version");
         Configuration.remote = System.getProperty("remote_selenide");
-        Configuration.proxyEnabled = true;
+//        Configuration.proxyEnabled = true;
         Configuration.proxyHost = "82.114.97.157";
         Configuration.proxyPort = 1256;
     }
