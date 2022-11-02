@@ -26,6 +26,7 @@ public class TestBase {
         Configuration.remote = System.getProperty("remote_selenide");
 
         Configuration.proxyHost = "85.26.146.169";
+
         Configuration.proxyPort = 80;
     }
 
