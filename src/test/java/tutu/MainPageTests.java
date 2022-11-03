@@ -45,8 +45,9 @@ public class MainPageTests extends TestBase {
     void visitPageFooter() {
         MainPage mainPage = new MainPage();
         mainPage.hoverMenuNav("TRADING")
-                .clickByText("FAQ");
-        assertEquals(mainPage.getSearchTitleFaq().getText(), "We've got answers to all of your questions");
+                .clickByText("FAQ")
+                .checkSearchHeaderText("We've got answers to all of your questions");
+
 
 
     }

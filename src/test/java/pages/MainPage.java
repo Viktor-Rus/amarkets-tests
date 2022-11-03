@@ -63,9 +63,16 @@ public class MainPage {
         $x("//ul[@class='ubermenu-nav']//span[text()='"+menuItem+"']").hover();
         return this;
     }
+    @Step("Клик по выбранному тексту")
     public MainPage clickByText(String textClick) {
         $(byText(textClick)).click();
-//        assertEquals(searchTitleFaq.getText(), "We've got answers to all of your questions");
+        return this;
+    }
+
+
+    @Step("Проверка текста хедара страницы FAQ")
+    public MainPage  checkSearchHeaderText(String textHeader) {
+        assertEquals(this.getSearchTitleFaq().getText(), textHeader);
         return this;
     }
 
