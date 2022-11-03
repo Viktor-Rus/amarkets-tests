@@ -20,7 +20,15 @@ public class MainPageTests extends TestBase {
     @Owner("vaurusov")
     @DisplayName("Проверка отображения логотипа на главной странице")
     void mainLogoVisible() {
-//        new MainPage().checkLogoVisible();
+        new MainPage().checkLogoVisible();
+
+    }
+
+    @Test
+    @Owner("vaurusov")
+    @DisplayName("Проверка отображения логотипа на главной странице")
+    void openAccountForm() {
+        new MainPage().openAnAccount();
 
     }
 
