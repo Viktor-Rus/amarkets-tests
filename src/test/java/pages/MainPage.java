@@ -54,7 +54,7 @@ public class MainPage {
     }
 
     public MainPage focusHeaderNavItem(String language) {
-        $("nav[id*='headermainmenu'] ul li span").$(byText(language)).hover();
+        $x("//ul[@class=\"ubermenu-nav\"]//span[text()=\"TRADING\"]").hover();
         $(byText("FAQ")).click();
         assertEquals($("h4[class='faq__search-title']").getText(), "Enter keywords. For example, \"verification\" or \"how to make a deposit\"");
         return this;
