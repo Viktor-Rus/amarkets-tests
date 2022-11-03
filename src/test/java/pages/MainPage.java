@@ -16,7 +16,7 @@ public class MainPage {
             mainLogo = $("div.header_logo"),
             openAccountButton =$(byText("Open Account")),
             headerTitle = $("h1[class*='header_title']"),
-            switcherLanguage = $("a[href='#pll_switcher]"),
+            switcherLanguage = $("a[href='#pll_switcher']"),
             tabInvestors =  $("a[title='Investors']"),
             titlePage =  $("h1[class='page-title']"),
             footer = $("footer[class='footer-wrapper']"),
