@@ -5,6 +5,8 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
+import java.util.List;
+
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
@@ -19,7 +21,8 @@ public class MainPage {
             switcherLanguage = $("a[href='#pll_switcher']"),
             languagesMenuFooter =  $("ul[id*='languages-menu']"),
             searchTitleFaq = $("h4[class='faq__search-title']"),
-            navMenuHeader = $x("//ul[@class='ubermenu-nav']");
+            navMenuHeader = $("ul[class='ubermenu-nav']");
+
 
 
     @Step("Открытие главной страницы")
