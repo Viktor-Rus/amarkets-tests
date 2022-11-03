@@ -58,7 +58,7 @@ public class MainPage {
     }
 
     public MainPage focusHeaderNavItem(String language) {
-        $x("ul[class='ubermenu-nav']//span[text()='"+language+"']").hover();
+        $x("ul[@class='ubermenu-nav']//span[text()='"+language+"']").hover();
         $(byText("FAQ")).click();
         assertEquals(searchTitleFaq.getText(), "We've got answers to all of your questions");
         return this;
