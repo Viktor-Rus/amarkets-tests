@@ -1,4 +1,9 @@
-# Проект по автоматизации тестирования Amarkets.com                <img alt="InteliJ IDEA" height="100" src="external/logos/logo-big.svg" width="100"/>
+# Проект по автоматизации тестирования Amarkets.com
+
+
+
+
+<img alt="InteliJ IDEA" height="100" src="external/logos/logo-big.svg" width="100"/>
 
 
 
