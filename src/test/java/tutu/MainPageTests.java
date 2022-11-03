@@ -12,7 +12,7 @@ public class MainPageTests extends TestBase {
 
     @BeforeEach
     public void visitMainPage() {
-        open("/");
+//        open("/");
 //        new MainPage().openMainPage();
     }
 
@@ -22,7 +22,7 @@ public class MainPageTests extends TestBase {
     @DisplayName("Проверка отображения логотипа на главной странице")
     void mainLogoVisible() {
 //        new MainPage().checkLogoVisible();
-        open("/");
+        open("https://www.amarkets.com/");
 
     }
 
