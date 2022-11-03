@@ -22,8 +22,7 @@ public class MainPage {
 
     @Step("Открытие главной страницы")
     public MainPage openMainPage() {
-        open("https://www.tutu.ru/");
-//        open(Configuration.baseUrl);
+        open(Configuration.baseUrl);
         return this;
     }
 
