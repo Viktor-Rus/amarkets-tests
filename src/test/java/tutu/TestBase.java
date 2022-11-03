@@ -22,7 +22,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class TestBase {
 
     @BeforeAll
-    static void configure() throws IOException {
+    static void configure() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -39,12 +39,12 @@ public class TestBase {
         Configuration.browserVersion = System.getProperty("browser_version");
         Configuration.remote = System.getProperty("remote_selenide");
 
-        Configuration.baseUrl = "https://www.tutu.ru";
+//        Configuration.baseUrl = "https://www.tutu.ru";
 
 //        Configuration.proxyEnabled = true;
 //        Configuration.proxyHost = "172.217.169.174";
 //        Configuration.proxyPort = 443;
-        Configuration.proxyEnabled = true;
+//        Configuration.proxyEnabled = true;
 //        System.setProperty("http.proxyHost", "172.217.169.174");
 //        System.setProperty("http.proxyPort", "443");
 
