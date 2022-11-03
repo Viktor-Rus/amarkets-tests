@@ -22,6 +22,7 @@ public class MainPageTests extends TestBase {
     @DisplayName("Проверка отображения логотипа на главной странице")
     void mainLogoVisible() {
 //        new MainPage().checkLogoVisible();
+        open("/");
 
     }
 
