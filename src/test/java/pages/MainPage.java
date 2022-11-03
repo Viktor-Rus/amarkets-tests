@@ -43,7 +43,7 @@ public class MainPage {
     }
 
     public MainPage choiceLanguage(String language) {
-        switcherLanguage.click();
+        switcherLanguage.should(appear).click();
         $(byText(language)).click();
         switcherLanguage.$("img[alt="+language +"]").should(appear);
         return this;
