@@ -43,8 +43,8 @@ public class MainPageTests extends TestBase {
     @Owner("vaurusov")
     @DisplayName("Переход на страницу FAQ")
     void visitPageFooter() {
-        MainPage mainPage = new MainPage();
-        mainPage.hoverMenuNav("TRADING")
+        new MainPage()
+                .hoverMenuNav("TRADING")
                 .clickByText("FAQ")
                 .checkSearchHeaderText("We've got answers to all of your questions");
 
