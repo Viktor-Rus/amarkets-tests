@@ -18,9 +18,7 @@ public class MainPage {
             headerTitle = $("h1[class*='header_title']"),
             switcherLanguage = $("a[href='#pll_switcher']"),
             languagesMenuFooter =  $("ul[id*='languages-menu']"),
-            titlePage =  $("h1[class='page-title']"),
-            footer = $("footer[class='footer-wrapper']"),
-            loginFooter =  $x("//a[.='Associate Login']");
+            navTrading =  $("nav a[href='https://www.amarkets.com/trading/']");
 
 
     @Step("Открытие главной страницы")
@@ -42,20 +40,27 @@ public class MainPage {
         return this;
     }
 
-    public MainPage choiceLanguage(String language) {
-        switcherLanguage.should(appear).click();
-        $(byText(language)).click();
-        switcherLanguage.$("img[alt="+language +"]").should(appear);
+
+    public MainPage scrollToFooter() {
+        languagesMenuFooter.scrollTo().click();
         return this;
     }
 
-
+    @Step("Изменить язык главной страницы")
     public MainPage choiceLanguageInFooter(String language) {
-        languagesMenuFooter.scrollTo().click();
         languagesMenuFooter.$(byText(language)).click();
         switcherLanguage.$("img[alt="+language +"]").should(appear);
         return this;
     }
+
+    public MainPage focusHeaderNavItem(String language) {
+        $("nav[id*='headermainmenu'] ul li span").$(byText(language)).hover();
+        $(byText("FAQ")).click();
+        assertEquals($("h4[class='faq__search-title']").getText(), "Enter keywords. For example, \"verification\" or \"how to make a deposit\"");
+        return this;
+    }
+
+
 
 
 

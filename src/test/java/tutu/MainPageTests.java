@@ -40,11 +40,20 @@ public class MainPageTests extends TestBase {
 //
 //    }
 
-        @Test
+    @Test
     @Owner("vaurusov")
     @DisplayName("Проверка переключателя языка в футере")
     void changeLanguage() {
-        new MainPage().choiceLanguage("Українська");
+        new MainPage().scrollToFooter()
+                      .choiceLanguageInFooter("Українська");
+
+    }
+
+    @Test
+    @Owner("vaurusov")
+    @DisplayName("Переход на страницу FAQ")
+    void visitPageFooter() {
+        new MainPage().focusHeaderNavItem("TRADING");
 
     }
 
