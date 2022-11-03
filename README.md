@@ -1,4 +1,6 @@
-# Проект по автоматизации тестирования Advantagesolutions
+<img alt="InteliJ IDEA" height="50" src="external/logos/logo-big.svg" width="50"/>
+# Проект по автоматизации тестирования Amarkets.com
+
 
 ## :ledger: Содержание
 
