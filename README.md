@@ -1,5 +1,6 @@
-# Проект по автоматизации тестирования Amarkets.com 
 <img alt="InteliJ IDEA" height="150" src="external/logos/logo-big.svg" width="150"/> 
+# Проект по автоматизации тестирования Amarkets.com 
+
 
 
 ## :ledger: Содержание
