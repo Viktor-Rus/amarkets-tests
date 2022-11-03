@@ -12,8 +12,8 @@ public class MainPageTests extends TestBase {
 
     @BeforeEach
     public void visitMainPage() {
-//        open("/");
-        new MainPage().openMainPage();
+        open("/");
+//        new MainPage().openMainPage();
     }
 
 
@@ -21,7 +21,7 @@ public class MainPageTests extends TestBase {
     @Owner("vaurusov")
     @DisplayName("Проверка отображения логотипа на главной странице")
     void mainLogoVisible() {
-        new MainPage().checkLogoVisible();
+//        new MainPage().checkLogoVisible();
 
     }
 
