@@ -32,4 +32,12 @@ public class MainPageTests extends TestBase {
 
     }
 
+    @Test
+    @Owner("vaurusov")
+    @DisplayName("Проверка переключателя языка")
+    void changeLanguage() {
+        new MainPage().choiceLanguage("Українська");
+
+    }
+
 }

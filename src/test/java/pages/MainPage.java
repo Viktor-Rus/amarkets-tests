@@ -16,7 +16,7 @@ public class MainPage {
             mainLogo = $("div.header_logo"),
             openAccountButton =$(byText("Open Account")),
             headerTitle = $("h1[class*='header_title']"),
-            sectionMadeToOrder = $("section[class='made-to-order']"),
+            switcherLanguage = $("a[href='#pll_switcher]"),
             tabInvestors =  $("a[title='Investors']"),
             titlePage =  $("h1[class='page-title']"),
             footer = $("footer[class='footer-wrapper']"),
@@ -39,6 +39,13 @@ public class MainPage {
     public MainPage openAnAccount() {
         openAccountButton.should(appear).click();
         headerTitle.shouldHave(text("Open an Account"));
+        return this;
+    }
+
+    public MainPage choiceLanguage(String language) {
+        switcherLanguage.click();
+        $(byText(language)).click();
+        switcherLanguage.$("img[alt="+language +"]").should(appear);
         return this;
     }
 
