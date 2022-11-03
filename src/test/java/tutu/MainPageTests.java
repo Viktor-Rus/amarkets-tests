@@ -26,7 +26,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Owner("vaurusov")
-    @DisplayName("Проверка отображения логотипа на главной странице")
+    @DisplayName("Проверка открытия формы 'Open an Account' ")
     void openAccountForm() {
         new MainPage().openAnAccount();
 
