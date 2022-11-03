@@ -5,6 +5,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class MainPageTests extends TestBase {
 
     @BeforeEach
@@ -40,7 +43,12 @@ public class MainPageTests extends TestBase {
     @Owner("vaurusov")
     @DisplayName("Переход на страницу FAQ")
     void visitPageFooter() {
-        new MainPage().focusHeaderNavItem("TRADING");
+        MainPage mainPage = new MainPage();
+        mainPage.hoverMenuNav("TRADING")
+                .clickByText("FAQ");
+        assertEquals(mainPage.getSearchTitleFaq().getText(), "We've got answers to all of your questions");
+
+
     }
 
 }

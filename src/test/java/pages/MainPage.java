@@ -44,7 +44,7 @@ public class MainPage {
         return this;
     }
 
-
+    @Step("Скролл главной страницы до футера")
     public MainPage scrollToFooter() {
         languagesMenuFooter.scrollTo().click();
         return this;
@@ -57,11 +57,20 @@ public class MainPage {
         return this;
     }
 
-    public MainPage focusHeaderNavItem(String language) {
-        $x("//ul[@class='ubermenu-nav']//span[text()='"+language+"']").hover();
-        $(byText("FAQ")).click();
-        assertEquals(searchTitleFaq.getText(), "We've got answers to all of your questions");
+
+    @Step("Ховер на пункте меню главной страницы")
+    public MainPage hoverMenuNav(String menuItem) {
+        $x("//ul[@class='ubermenu-nav']//span[text()='"+menuItem+"']").hover();
         return this;
+    }
+    public MainPage clickByText(String textClick) {
+        $(byText(textClick)).click();
+//        assertEquals(searchTitleFaq.getText(), "We've got answers to all of your questions");
+        return this;
+    }
+
+    public SelenideElement getSearchTitleFaq(){
+        return searchTitleFaq;
     }
 
 
