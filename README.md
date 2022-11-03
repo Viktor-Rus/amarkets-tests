@@ -32,10 +32,9 @@
 <a id="object"></a>
 ## :keyboard: Реализованные автотесты
 - Проверка отображения логотипа на главной странице
-- Проверка открытия формы поиска
-- Проверка наличия блока made to order и скролл до него
-- Проверка перехода на вкладку INVESTORS
-- Проверка открытия формы авторизации из футера
+- Проверка открытия формы 'Open an Account'
+- Проверка переключателя языка в футере
+- Переход на страницу FAQ
 
 
 <a id="console"></a>
@@ -48,37 +47,41 @@ test
 -DbrowserSize=${BROWSER_SIZE}
 ```
 
-<a id="selenoid"></a>
-## <a href="https://selenoid.autotests.cloud/video/e1d833aa3b92f863ca66487b400c0542.mp4"><img alt="Selenoid" height="50" src="external/logos/Selenoid.svg" width="50"/>Selenoid</a>
 
-<video src="https://user-images.githubusercontent.com/41300396/196536862-5fe019d4-c0a8-43ce-9015-0cef990109ba.mp4"
+
+
+
+<a id="selenoid"></a>
+## <a href="https://selenoid.autotests.cloud/video/e12daaa3cc2d6bb29c9b55c9887d976a.mp4"><img alt="Selenoid" height="50" src="external/logos/Selenoid.svg" width="50"/>Selenoid</a>
+
+<video src="https://user-images.githubusercontent.com/41300396/199748811-42f96978-1e65-410b-8bf4-3e57d86d435b.mp4"
 controls="controls" style="max-width: 730px;" poster="/external/logos/Selenoid.svg">
 Видео не доступно для этого браузера
 </video>
 
 
 <a id="jenkins"></a>
-##  <a href="https://jenkins.autotests.cloud/job/qa_guru_15_test_project/"><img alt="Jenkins" height="50" src="external/logos/Jenkins.svg" width="50"/>Jenkins</a>
+##  <a href="https://jenkins.autotests.cloud/job/amarkets-tests/"><img alt="Jenkins" height="50" src="external/logos/Jenkins.svg" width="50"/>Jenkins</a>
   
-<a href="https://jenkins.autotests.cloud/job/qa_guru_15_test_project/">
+<a href="https://jenkins.autotests.cloud/job/amarkets-tests/">
 
-<img src="https://user-images.githubusercontent.com/41300396/196721255-9ccf76e7-a77f-4e66-a0bf-abea80f3bba2.png" alt="Jenkins">
+
+<img width="1496" src="https://user-images.githubusercontent.com/41300396/199749445-b19589d3-ac2d-4dc0-8159-b355e2b6645d.png">
 </a>
 
 <a id="allure"></a>
-## <a href="https://jenkins.autotests.cloud/job/qa_guru_15_test_project/19/allure"><img alt="Allure" height="50" src="external/logos/Allure.svg" width="50"/>Allure</a>
-
+## <a href="https://jenkins.autotests.cloud/job/amarkets-tests/67/allure/"><img alt="Allure" height="50" src="external/logos/Allure.svg" width="50"/>Allure</a>
 
 <table>
     <tr>
         <td>
-        <a href="https://jenkins.autotests.cloud/job/qa_guru_15_test_project/19/allure">
-        <img src="https://user-images.githubusercontent.com/41300396/196721938-3e58cf6a-d51a-4e42-8bc7-09660bc44b78.png">
+        <a href="https://jenkins.autotests.cloud/job/amarkets-tests/67/allure/">
+        <img src="https://user-images.githubusercontent.com/41300396/199749853-da5cb0eb-47a7-4be1-863f-4ed0d9732d91.png">
         </a>
         </td>
         <td>
-        <a href="https://jenkins.autotests.cloud/job/qa_guru_15_test_project/19/allure/#suites/d0ad84e2d930155977a3f11edd63acba/3ea56f3a3afe51ad/">
-        <img src="https://user-images.githubusercontent.com/41300396/196721957-0e12234b-b260-404a-b954-1aefd2c1639c.png">
+        <a href="https://jenkins.autotests.cloud/job/amarkets-tests/67/allure/#suites/1c475ca5e4fe837f70a957563a782ef3/a6f59ab421b2f94c/">
+        <img src="https://user-images.githubusercontent.com/41300396/199750556-8ea36349-6c45-4772-9542-bf8d2308505f.png">
         </a>
         </td>
     </tr>
@@ -89,5 +92,5 @@ controls="controls" style="max-width: 730px;" poster="/external/logos/Selenoid.s
 <a id="telegram"></a>
 ## <a><img alt="Telegram" height="50" src="external/logos/Telegram.svg" width="50"/>Telegram</a>
 
-<img width="769" alt="Снимок экрана 2022-10-19 в 16 39 47" src="https://user-images.githubusercontent.com/41300396/196722337-52c9460f-83a5-4b4b-b7b9-17f339b69c72.png">
+<img width="769"  src="https://user-images.githubusercontent.com/41300396/199750764-93c7d73c-41b2-4596-94ee-523731abbfdc.png">
 
