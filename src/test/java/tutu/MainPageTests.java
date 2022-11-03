@@ -5,8 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
-
-
 public class MainPageTests extends TestBase {
 
     @BeforeEach
@@ -16,12 +14,11 @@ public class MainPageTests extends TestBase {
     }
 
 
-    @Test
+    @Test()
     @Owner("vaurusov")
     @DisplayName("Проверка отображения логотипа на главной странице")
     void mainLogoVisible() {
         new MainPage().checkLogoVisible();
-
     }
 
     @Test
@@ -29,16 +26,7 @@ public class MainPageTests extends TestBase {
     @DisplayName("Проверка открытия формы 'Open an Account' ")
     void openAccountForm() {
         new MainPage().openAnAccount();
-
     }
-
-//    @Test
-//    @Owner("vaurusov")
-//    @DisplayName("Проверка переключателя языка")
-//    void changeLanguage() {
-//        new MainPage().choiceLanguage("Українська");
-//
-//    }
 
     @Test
     @Owner("vaurusov")
@@ -46,7 +34,6 @@ public class MainPageTests extends TestBase {
     void changeLanguage() {
         new MainPage().scrollToFooter()
                       .choiceLanguageInFooter("Українська");
-
     }
 
     @Test
@@ -54,7 +41,6 @@ public class MainPageTests extends TestBase {
     @DisplayName("Переход на страницу FAQ")
     void visitPageFooter() {
         new MainPage().focusHeaderNavItem("TRADING");
-
     }
 
 }

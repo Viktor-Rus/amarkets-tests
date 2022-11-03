@@ -18,7 +18,8 @@ public class MainPage {
             headerTitle = $("h1[class*='header_title']"),
             switcherLanguage = $("a[href='#pll_switcher']"),
             languagesMenuFooter =  $("ul[id*='languages-menu']"),
-            navTrading =  $("nav a[href='https://www.amarkets.com/trading/']");
+            searchTitleFaq = $("h4[class='faq__search-title']"),
+            navMenuHeader = $x("//ul[@class='ubermenu-nav']");
 
 
     @Step("Открытие главной страницы")
@@ -54,9 +55,9 @@ public class MainPage {
     }
 
     public MainPage focusHeaderNavItem(String language) {
-        $x("//ul[@class=\"ubermenu-nav\"]//span[text()=\"TRADING\"]").hover();
+        navMenuHeader.$x("//span[text()="+language+"]").hover();
         $(byText("FAQ")).click();
-        assertEquals($("h4[class='faq__search-title']").getText(), "We've got answers to all of your questions");
+        assertEquals(searchTitleFaq.getText(), "We've got answers to all of your questions");
         return this;
     }
 
