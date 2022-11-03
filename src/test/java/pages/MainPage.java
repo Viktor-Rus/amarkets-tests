@@ -37,7 +37,7 @@ public class MainPage {
 
     @Step("Проверка открытия формы логина с главной страницы")
     public MainPage openAnAccount() {
-        openAccountButton.click();
+        openAccountButton.should(appear).click();
         headerTitle.shouldHave(text("Open an Account"));
         return this;
     }
