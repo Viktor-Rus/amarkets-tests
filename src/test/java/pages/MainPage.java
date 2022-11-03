@@ -17,7 +17,7 @@ public class MainPage {
             openAccountButton =$(byText("Open Account")),
             headerTitle = $("h1[class*='header_title']"),
             switcherLanguage = $("a[href='#pll_switcher']"),
-            tabInvestors =  $("a[title='Investors']"),
+            languagesMenuFooter =  $("ul[id*='languages-menu']"),
             titlePage =  $("h1[class='page-title']"),
             footer = $("footer[class='footer-wrapper']"),
             loginFooter =  $x("//a[.='Associate Login']");
@@ -45,6 +45,14 @@ public class MainPage {
     public MainPage choiceLanguage(String language) {
         switcherLanguage.should(appear).click();
         $(byText(language)).click();
+        switcherLanguage.$("img[alt="+language +"]").should(appear);
+        return this;
+    }
+
+
+    public MainPage choiceLanguageInFooter(String language) {
+        languagesMenuFooter.scrollTo().click();
+        languagesMenuFooter.$(byText(language)).click();
         switcherLanguage.$("img[alt="+language +"]").should(appear);
         return this;
     }
